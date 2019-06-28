@@ -1,0 +1,14 @@
+dependencies {
+    implementation project(':FtcRobotController')
+    compile (group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1') {
+        exclude module: 'junit'
+    }
+    implementation (name: 'RobotCore-release', ext: 'aar')
+    implementation (name: 'Hardware-release', ext: 'aar')
+    implementation (name: 'FtcCommon-release', ext: 'aar')
+    implementation (name: 'WirelessP2p-release', ext:'aar')
+    implementation (name: 'tfod-release', ext:'aar')
+    implementation (name: 'tensorflow-lite-0.0.0-nightly', ext:'aar')
+    implementation 'com.acmerobotics.dashboard:dashboard:0.2.3'
+    implementation 'com.acmerobotics.roadrunner:core:0.2.6'
+}
